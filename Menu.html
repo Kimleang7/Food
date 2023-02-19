@@ -4,20 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Application</title>
+    <title>FreshDaily Restaurant</title>
     <link rel="icon" href="images/food-logo.png">
 
-    <style>
-        .menu{
-            margin-top: 8rem;
-        }
-    </style>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/addToCart.css">
 
 </head>
 <body>
@@ -40,10 +36,37 @@
         <i class="fas fa-bars" id="menu-bars"></i>
         <i class="fas fa-search" id="search-icon"></i>
         <a href="/Login.html" class="fas fa-user"></a>  
-        <a href="/AddToCart.html" class="fas fa-shopping-cart"></a>  
+        <i class="fas fa-shopping-cart" id="cart-icon"></i>
+    </div>
+
+     <!-- add to cart -->
+    <div class="cart">
+        <i class="fa-regular fa-circle-xmark" id="close-icon"></i>
+        <h3>Your cart</h3>
+        <div class="cart-box">
+            <div class="image">
+                <img src="images/menu-14.jpg" alt="">
+            </div>
+            <div class="cart-text">
+                <span>Beef Steak</span>
+                <p>Price $12.99</p>
+                <input type="number" value="1" class="cart-qty">
+            </div>
+            <div class="cart-remove">
+                <i class="fa-solid fa-trash"></i>
+            </div>
+            <div class="total">
+                <span>Total:</span>
+                <span>$0</span>
+            </div>
+            <button type="button" class="buy-btn">Buy now</button>
+        </div>
+
     </div>
 
 </header>
+
+
     
     <section class="menu" id="menu">
 
@@ -51,6 +74,83 @@
         <h1 class="heading"> today's speciality </h1>
     
         <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-12.jpg" alt="">
+                    
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Beef Steak</h3>
+                    <p>Wagyu beef is popular around the world because of its superior eating quality.</p>
+                    <span class="price">$12.99</span>
+                    <a href="/AddToCart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-13.jpg" alt="">
+                    
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Vegetable Soup</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                    <span class="price">$12.99</span>
+                    <a href="/AddToCart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-14.jpg" alt="">
+                    
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Steam egg</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                    <span class="price">$12.99</span>
+                    <a href="/AddToCart.html" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-16.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Sushi trash</h3>
+                    <p>The rice is traditionally moistened with rice vinegar is called trash</p>
+                    <span class="price">$12.99</span>
+                    <a href="/AddToCart.html" class="btn">add to cart</a>
+                </div>
+            </div>
     
             <div class="box">
                 <div class="image">
@@ -133,143 +233,59 @@
                     
                 </div>
             </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-5.jpg" alt="">
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                    <a href="/AddToCart.html" class="btn">add to cart</a>
-                    
-                    
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-6.jpg" alt="">
-                    
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                    <a href="/AddToCart.html" class="btn">add to cart</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-7.jpg" alt="">
-                    
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                    <a href="/AddToCart.html" class="btn">add to cart</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-8.jpg" alt="">
-                    
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                    <a href="/AddToCart.html" class="btn">add to cart</a>
-                </div>
-            </div>
         </div>
     
     </section>
-    
-<section class="footer">
+    <div class="footer">
 
-    <div class="box-container">
+        <div class="box-container">
 
-        <!-- <div class="box">
-            <h3>locations</h3>
-            <a href="#">india</a>
-            <a href="#">japan</a>
-            <a href="#">russia</a>
-            <a href="#">USA</a>
-            <a href="#">france</a>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">menu</a>
+                <a href="#">promotion</a>
+                <a href="#">about</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="box">
+                <h3>Location</h3>
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="#">3rd Floor, City C4, Olympia 
+                   <br> City Phnom Penh, Cambodia, 12312
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+855 979 801 569 </a>
+                <a href="#">johnkimleang29@mail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#">Please support us by other platform</a>
+            </div>
+        </div>
+        <!-- <div class="credit">
+            <p>Develop by: JK Leang</p>
         </div> -->
-
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#">home</a>
-            <a href="#">dishes</a>
-            <a href="#">about</a>
-            <a href="#">menu</a>
-            <a href="#">reivew</a>
-            <a href="#">order</a>
-        </div>
-
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#">+855 979 801 569 </a>
-            <a href="#">mrpro123@gmail.com</a>
-            <a href="#">johnkimleang29@mail.com</a>
-            <a href="#">Phnom Penh, Cambodia </a>
-        </div>
-
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="#">facebook</a>
-            <a href="#">twitter</a>
-            <a href="#">instagram</a>
-            <a href="#">linkedin</a>
-        </div>
-
     </div>
-
-    
-
-</section>
 
     <!-- loader part  -->
 <!-- <div class="loader-container">
     <img src="images/loader.gif" alt="">
 </div> -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<script src="js/addToCard.js"></script>
 </body>
 </html>

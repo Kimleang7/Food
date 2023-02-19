@@ -87,7 +87,6 @@ header {
     background: #fff;
     padding: 1rem 7%;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     z-index: 1000;
     box-shadow: var(--box-shadow);
@@ -141,7 +140,6 @@ header .icons i:hover,
 header .icons a:hover {
     color: #fff;
     background: var(--bs-blue);
-    /* transform: rotate(360deg); */
 }
 
 header .icons #menu-bars {
@@ -221,6 +219,7 @@ header .icons #menu-bars {
 
 .home .home-slider .slide .image img {
     width: 100%;
+    /* height: 50rem; */
 }
 
 .home .home-slider .slide .content span {
@@ -248,47 +247,22 @@ header .icons #menu-bars {
 
 
 .feature .item {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    gap: 3rem;
+    gap: 3rem; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     margin: 4rem 0;
     justify-content: space-between;
     transition: all 0.7;
+
 }
 
-.feature h3 {
-    text-align: center;
-    font-size: 38px;
-    color: #202647;
-    padding-bottom: 5px;
-    position: relative;
-}
-
-.feature h3::before {
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 80px;
-    background-color: var(--bs-green);
-    bottom: 0;
-    left: 0;
-    right: 35px;
-    margin: auto;
-}
-
-.feature h3::after {
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 32px;
-    background-color: var(--green);
-    bottom: 0;
-    margin: 0 auto;
-    left: 95px;
-    right: 0;
-}
 
 .feature .item .main-item1 {
+    flex: 1 1 22rem;
     position: relative;
     padding: 2.5rem;
     color: var(--bs-indigo);
@@ -297,6 +271,7 @@ header .icons #menu-bars {
     text-align: center;
     height: 20rem;
     cursor: pointer;
+
 
 }
 
@@ -328,6 +303,7 @@ header .icons #menu-bars {
 
 
 .feature .item .main-item2 {
+    flex: 1 1 22rem;
     position: relative;
     padding: 2.5rem;
     color: var(--bs-red);
@@ -367,6 +343,7 @@ header .icons #menu-bars {
 }
 
 .feature .item .main-item3 {
+    flex: 1 1 22rem;
     position: relative;
     padding: 2.5rem;
     color: var(--bs-teal);
@@ -405,6 +382,7 @@ header .icons #menu-bars {
 }
 
 .feature .item .main-item4 {
+    flex: 1 1 22rem;
     position: relative;
     padding: 2.5rem;
     color: var(--bs-orange);
@@ -447,7 +425,6 @@ header .icons #menu-bars {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding-bottom: 3rem;
 }
 
 .story .row .image {
@@ -456,6 +433,7 @@ header .icons #menu-bars {
 
 .story .row .image img {
     width: 100%;
+    height: 30rem;
 }
 
 .story .row .content {
@@ -463,54 +441,19 @@ header .icons #menu-bars {
 }
 
 .story .row .content p {
-    color: var(--light-color);
+    color: var(--bs-gray-dark);
     font-size: 1.5rem;
-    font-family: sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
     padding: .5rem 0;
-    line-height: 2;
-}
-
-.strory .row .content h2 {
-    color: var(--black);
-    font-size: 4rem;
-    padding: .5rem 0;
-}
-
-.story h3 {
-    text-align: center;
-    font-size: 38px;
-    color: #202647;
-    padding-bottom: 5px;
-    position: relative;
-    margin-bottom: 5rem;
-}
-
-.story h3::before {
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 80px;
-    background-color: var(--bs-green);
-    bottom: 0;
-    left: 0;
-    right: 35px;
-    margin: auto;
-}
-
-.story h3::after {
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 32px;
-    background-color: var(--green);
-    bottom: 0;
-    margin: 0 auto;
-    left: 95px;
-    right: 0;
+    text-align: left;
+    line-height: 1.5;
 }
 
 
 
+.dishes{
+    margin-top: 8rem;
+}
 .dishes .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
@@ -592,11 +535,14 @@ header .icons #menu-bars {
 }
 
 
+
+.about{
+    margin-top: 8rem;
+}
 .about .row {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-
 }
 
 .about .row .image {
@@ -625,7 +571,9 @@ header .icons #menu-bars {
 }
 
 
-
+.menu{
+    margin-top: 8rem;
+}
 .menu .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
@@ -743,7 +691,9 @@ header .icons #menu-bars {
     line-height: 1.8;
     color:var(--light-color);
 } */
-
+.order{
+    margin-top: 8rem;
+}
 .order form {
     max-width: 90rem;
     border-radius: .5rem;
@@ -796,11 +746,15 @@ header .icons #menu-bars {
 .order form .btn {
     margin-top: 0;
 }
-
+.footer {
+    
+}
 .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
+    background-image: url(/images/footer-img-1.jpg);
+    padding:2rem 5%;
 }
 
 .footer .box-container .box h3 {
@@ -813,21 +767,62 @@ header .icons #menu-bars {
     display: block;
     padding: .5rem 0;
     font-size: 1.5rem;
-    color: var(--light-color);
+    color: var(--bs-gray-dark);
+}
+.footer .box-container .box i {
+    font-size: 2rem;
+}
+.footer .box-container .box .fa-facebook {
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color:#eee;
+    color:  #0d6efd ;
+}
+.footer .box-container .box .fa-instagram {
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color:#eee ;
+}
+.footer .box-container .box .fa-linkedin {
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color:#0d6efd;
+    color: #eee;
+}
+.footer .box-container .box .fa-github {
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color:#eee;
+    color:  #343a40 ;
 }
 
 .footer .box-container .box a:hover {
-    color: var(--green);
-    text-decoration: underline;
+    color: var(--bs-blue);
+    /* text-decoration: underline; */
 }
 
 .footer .credit {
     text-align: center;
-    border-top: .1rem solid rgba(0, 0, 0, .1);
     font-size: 2rem;
     color: var(--black);
     padding: .5rem;
-    padding-top: 1.5rem;
     margin-top: 1.5rem;
 }
 
@@ -865,11 +860,6 @@ header .icons #menu-bars {
 
 
 
-
-
-
-
-
 /* media queries  */
 
 @media (max-width:991px) {
@@ -891,6 +881,12 @@ header .icons #menu-bars {
     header .navbar {
         text-align: center;
         margin: 0;
+    }
+    .story .row .content p{
+        font-size: 10px;
+    }
+    .story .row .image img{
+        height: 20rem;
     }
 
 
@@ -955,5 +951,26 @@ header .icons #menu-bars {
     .order form .inputBox .input {
         width: 100%;
     }
+    header .icons {
+        display: flex;
+    }
+    header .icons i{ 
+        margin-top: 20px;
+        width: 40px;
+        line-height: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+    header .icons a{ 
+        margin-top: 20px;
+        width: 40px;
+        line-height: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+    header .logo img{
+        width: 60px;
+    }
+
 
 }
