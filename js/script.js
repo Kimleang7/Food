@@ -18,6 +18,9 @@ document.querySelector('#close').onclick = () =>{
 }
 
 
+
+
+
 // function loader(){
 //   document.querySelector('.loader-container').classList.add('fade-out');
 // }

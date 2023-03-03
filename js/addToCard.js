@@ -6,3 +6,6 @@ document.querySelector('#cart-icon').onclick = () =>{
 document.querySelector('#close-icon').onclick = () =>{
   cart.classList.remove('active');
 }
+document.querySelector('.buy-btn').onclick = () =>{
+  alert('Ordered');
+}
